@@ -12,7 +12,7 @@ function AdminDashboard() {
   const loadComplaints = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/complaints",
+        "https://campusconnect-backend-l1yw.onrender.com/api/admin/complaints",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ function AdminDashboard() {
   const updateStatus = async (id, status) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/complaints/${id}`,
+        `https://campusconnect-backend-l1yw.onrender.com/api/admin/complaints/${id}`,
         {
           method: "PATCH",
           headers: {

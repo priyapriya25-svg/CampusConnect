@@ -20,7 +20,7 @@ function Dashboard() {
 const loadComplaints = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/complaints/my",
+      "https://campusconnect-backend-l1yw.onrender.com/api/complaints/my",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -69,7 +69,7 @@ const loadComplaints = async () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/complaints",
+        "https://campusconnect-backend-l1yw.onrender.com/api/complaints",
         {
           method: "POST",
           headers: {
